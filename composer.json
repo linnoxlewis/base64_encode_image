@@ -1,0 +1,22 @@
+{
+    "name": "linnoxlewis/base64_encode_image",
+    "description": "Encode your image to base64-string from form or base path to your image",
+    "type": "package",
+    "require": {
+        "php": "7.*",
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vitaliy Osipenko",
+            "email": "vosipenko1394@gmail.com"
+        }
+    ],
+    "minimum-stability" : "master",
+     "prefer-stable": true ,
+    "autoload": {
+        "psr-4": {
+            "linnoxlewis\\iap\\": "src/base64Image"
+        }
+    }
+}
