@@ -13,10 +13,9 @@
         }
     ],
     "minimum-stability" : "dev",
-     "prefer-stable": true ,
     "autoload": {
         "psr-4": {
-            "linnoxlewis\\iap\\": "src/base64Image"
+            "linnoxlewis\\base64_encode_image\\": ""
         }
     }
 }
