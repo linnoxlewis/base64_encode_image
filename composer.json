@@ -12,11 +12,11 @@
             "email": "vosipenko1394@gmail.com"
         }
     ],
-    "minimum-stability" : "master",
+    "minimum-stability" : "dev",
      "prefer-stable": true ,
     "autoload": {
         "psr-4": {
-            "linnoxlewis\\iap\\": "src/base64Image"
+            "linnoxlewis\\base64Image\\": "src/"
         }
     }
 }

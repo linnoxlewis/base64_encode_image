@@ -4,7 +4,7 @@ namespace linnoxlewis\base64Image;
 
 use linnoxlewis\exception\ImageValidateException;
 use linnoxlewis\validators\Validator;
-use linnoxlewis\base64Image\BaseEncode;
+
 
 Class Base64pathEncode extends BaseEncode
 {
