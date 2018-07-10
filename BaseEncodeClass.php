@@ -1,9 +1,9 @@
 <?php
 
-namespace base64Image;
+namespace linnoxlewis\base64Image;
 
-include ('base64EncodeClasses/Base64formEncodeClass.php');
-include ('base64EncodeClasses/Base64pathEncodeClass.php');
+include ('Base64formEncodeClass.php');
+include ('Base64pathEncodeClass.php');
 include ("validators/ValidatorClass.php");
 include ("exception/ImageValidateException.php");
 include ("config/params.php");

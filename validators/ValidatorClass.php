@@ -1,7 +1,7 @@
 <?php
 
-namespace validators;
-use exception\ImageValidateException;
+namespace linnoxlewis\validators;
+use linnoxlewis\exception\ImageValidateException;
 
 
 Class Validator{

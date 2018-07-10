@@ -1,10 +1,10 @@
 <?php
 
-namespace base64EncodeClasses;
+namespace linnoxlewis\base64Image;
 
-use exception\ImageValidateException;
-use validators\Validator;
-use base64Image\BaseEncode;
+use linnoxlewis\exception\ImageValidateException;
+use linnoxlewis\validators\Validator;
+use linnoxlewis\base64Image\BaseEncode;
 
 Class Base64pathEncode extends BaseEncode
 {

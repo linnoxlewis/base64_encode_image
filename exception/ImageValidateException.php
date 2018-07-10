@@ -1,5 +1,5 @@
 <?php
-namespace exception;
+namespace linnoxlewis\exception;
 use Exception;
 
 class ImageValidateException extends Exception
