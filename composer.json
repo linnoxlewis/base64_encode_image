@@ -3,7 +3,7 @@
     "description": "Encode your image to base64-string from form or base path to your image",
     "type": "package",
     "require": {
-        "php": "7.*",
+        "php": "7.*"
     },
     "license": "MIT",
     "authors": [
