@@ -10,7 +10,7 @@ Class Base64pathEncode extends BaseEncode
     /**
      * Метод кодирование картинки.
      *
-     * @param string $imagePath Путь до картинки.
+     * @param string|array $imagePath Путь до картинки.
      *
      * @throws ImageValidateException
      * @return string
@@ -25,13 +25,9 @@ Class Base64pathEncode extends BaseEncode
             $validator->setExtension($imageParam['extension']);
             $validator->setImageSize($imageParam['size']);
 
-            try {
-                if ($validator->validate()) {
-                   $base64 = $this->getEncoding($imageParam['type'], $imageParam['fileTmp']);
-                   return $base64;
-                }
-            } catch (ImageValidateException $e) {
-                return $e->getMessage();
+            if ($validator->validate()) {
+                $base64 = $this->getEncoding($imageParam['type'], $imageParam['fileTmp']);
+                return $base64;
             }
         } else {
             throw new ImageValidateException("Нет такого файла");
@@ -51,7 +47,7 @@ Class Base64pathEncode extends BaseEncode
         return [
             'fileTmp' => $image,
             'type' => null,
-            'extension' =>  $pathParts['extension'],
+            'extension' => $pathParts['extension'],
             'size' => filesize($image),
         ];
     }

@@ -15,7 +15,6 @@ Abstract Class BaseEncode
      * @return string
      */
 	public abstract function base64Encode($imagePath): ?string;
-
     /**
      * Парсинг параметров картинки
      *
@@ -24,7 +23,6 @@ Abstract Class BaseEncode
      * @return array
      */
 	protected abstract function parseImage($image): array;
-
     /**
      * Получение строки base64
      *

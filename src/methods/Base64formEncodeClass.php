@@ -4,26 +4,24 @@ namespace linnoxlewis\base64Image\methods;
 
 use linnoxlewis\exception\ImageValidateException;
 use linnoxlewis\validators\Validator;
-
 /**
  * Class Base64formEncode
  * @package linnoxlewis\base64Image\methods
  */
 Class Base64formEncode extends BaseEncode
 {
-
     /**
      * Метод кодирование картинки.
      *
-     * @param string $image объект картинки.
+     * @param string|array $image объект картинки.
      *
      * @throws ImageValidateException
      * @return string
      */
     public function base64Encode($image): ?string
     {
-        if (isset($_FILES['image'])) {
-            $imageParam = $this->parseImage($_FILES['image']);
+        if (isset($image)) {
+            $imageParam = $this->parseImage($image['image']);
 
             $validator = new Validator();
             $validator->setExtension($imageParam['extension']);

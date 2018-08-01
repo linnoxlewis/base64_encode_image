@@ -44,7 +44,7 @@ Class Validator{
 	 *
      * @param integer $value размер картинки
      */
-    public function setImageSize($value) : void
+    public function setImageSize(int $value) : void
     {
         $this->imageSize= $value;
     }
