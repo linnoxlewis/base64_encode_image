@@ -16,6 +16,7 @@ include ("exception/ImageValidateException.php");
 class Base64Encode
 {
     /**
+     * Метод кодирования.
      * @var BaseEncode
      */
     public $baseEncode;
@@ -26,7 +27,7 @@ class Base64Encode
     }
     /**
      *
-     * @param $image
+     * @param string|array $image картинка(путь к ней либо массив параметров($_FILES))
      *
      * @throws ImageValidateException
      * @return null|string
