@@ -8,6 +8,7 @@ use linnoxlewis\exception\ImageValidateException;
 include("validators/ValidatorClass.php");
 include ("config/params.php");
 include ("exception/ImageValidateException.php");
+
 /**
  * Class Base64Encode
  * @package linnoxlewis\base64Image
