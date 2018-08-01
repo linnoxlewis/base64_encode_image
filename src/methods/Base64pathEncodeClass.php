@@ -5,6 +5,10 @@ namespace linnoxlewis\base64Image\methods;
 use linnoxlewis\exception\ImageValidateException;
 use linnoxlewis\validators\Validator;
 
+/**
+ * Class Base64formEncode
+ * @package linnoxlewis\base64Image\methods
+ */
 Class Base64pathEncode extends BaseEncode
 {
     /**
