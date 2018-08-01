@@ -1,9 +1,13 @@
 <?php
 
 namespace linnoxlewis\validators;
+
 use linnoxlewis\exception\ImageValidateException;
 
-
+/**
+ * Class Validator
+ * @package linnoxlewis\validators
+ */
 Class Validator{
 	
 	/**
@@ -68,7 +72,6 @@ Class Validator{
 			{
 				$error.= $key ."-".$value;
 			}
-			
 			throw new ImageValidateException($error);
 		}
 

@@ -1,36 +1,25 @@
 <?php
 
-namespace linnoxlewis\base64Image;
+namespace linnoxlewis\base64Image\methods;
 
 use linnoxlewis\exception\ImageValidateException;
 use linnoxlewis\validators\Validator;
 
-
 Class Base64pathEncode extends BaseEncode
 {
     /**
-     * Путь к картинки
+     * Метод кодирование картинки.
      *
-     * @var string
-     */
-    public $imagePath;
-
-    public function __construct($imagePath)
-    {
-        $this->imagePath = $imagePath;
-    }
-
-    /**
-     * Метод кодирование картинки
+     * @param string $imagePath Путь до картинки.
      *
      * @throws ImageValidateException
      * @return string
      */
-    public function base64Encode(): string
+    public function base64Encode($imagePath): string
     {
-        if (file_exists($this->imagePath)) {
+        if (file_exists($imagePath)) {
 
-            $imageParam = $this->parseImage($this->imagePath);
+            $imageParam = $this->parseImage($imagePath);
 
             $validator = new Validator();
             $validator->setExtension($imageParam['extension']);

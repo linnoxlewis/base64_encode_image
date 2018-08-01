@@ -1,11 +1,11 @@
 <?php
 
-namespace linnoxlewis\base64Image;
+namespace linnoxlewis\base64Image\methods;
 
-include("validators/ValidatorClass.php");
-include("exception/ImageValidateException.php");
-include("config/params.php");
-
+/**
+ * Class BaseEncode
+ * @package linnoxlewis\base64Image\methods
+ */
 Abstract Class BaseEncode
 {
     /**
@@ -14,7 +14,7 @@ Abstract Class BaseEncode
      * @throws \Exception
      * @return string
      */
-	public abstract function base64Encode(): ?string;
+	public abstract function base64Encode($imagePath): ?string;
 
     /**
      * Парсинг параметров картинки
@@ -23,7 +23,7 @@ Abstract Class BaseEncode
      *
      * @return array
      */
-	protected abstract function parseImage($image): array ;
+	protected abstract function parseImage($image): array;
 
     /**
      * Получение строки base64
