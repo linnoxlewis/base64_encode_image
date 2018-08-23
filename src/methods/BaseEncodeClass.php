@@ -1,7 +1,6 @@
 <?php
 
 namespace linnoxlewis\base64Image\methods;
-
 /**
  * Class BaseEncode
  * @package linnoxlewis\base64Image\methods
@@ -35,6 +34,6 @@ Abstract Class BaseEncode
 	{
 		$data = file_get_contents($fileTmp);
 		$base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
-        return $base64;
+      		return $base64;
 	}
 }
