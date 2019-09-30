@@ -10,13 +10,17 @@ include ("config/params.php");
 include ("exception/ImageValidateException.php");
 
 /**
+ * Библиотека кодирования
+ *
  * Class Base64Encode
+ *
  * @package linnoxlewis\base64Image
  */
 class Base64Encode
 {
     /**
      * Метод кодирования.
+     *
      * @var BaseEncode
      */
     public $baseEncode;
@@ -25,12 +29,14 @@ class Base64Encode
     {
         $this->baseEncode = $baseEncode;
     }
+
     /**
+     * Метод кодирования
      *
-     * @param string|array $image картинка(путь к ней либо массив параметров($_FILES))
+     * @param string|array $image входная картинка
      *
+     * @return string
      * @throws ImageValidateException
-     * @return null|string
      */
     public function encode($image): string
     {

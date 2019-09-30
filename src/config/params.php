@@ -1,19 +1,30 @@
-<?php 
+<?php
 
- /**
+/**
  * Доступные расширения
  *
  * @var array
  */
- const EXTENSION = array('jpg','jpeg','png','gif');
- /**
+const EXTENSION = ['jpg', 'jpeg', 'png', 'gif'];
+
+/**
  * Максимальный размер картинки
  *
  * @var integer
  */
- const IMAGE_SIZE = 2097152;
- 
- const ERROR_EXTENSION_MESSAGE = "Расширение не поддерживается."; 
+const IMAGE_SIZE = 2097152;
 
- const ERROR_SIZE_MESSAGE = "Размер расширения слишком велик.";  
+/**
+ * Сообщение об ошибки
+ *
+ * @var string
+ */
+const ERROR_EXTENSION_MESSAGE = 'Расширение не поддерживается.';
+
+/**
+ * Сообщение об ошибки
+ *
+ * @var string
+ */
+const ERROR_SIZE_MESSAGE = 'Размер расширения слишком велик.';
  

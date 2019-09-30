@@ -1,7 +1,6 @@
 <?php
 
 namespace linnoxlewis\exception;
-
 use Exception;
 
 /**

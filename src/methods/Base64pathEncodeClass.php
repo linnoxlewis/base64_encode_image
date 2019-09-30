@@ -6,7 +6,10 @@ use linnoxlewis\exception\ImageValidateException;
 use linnoxlewis\validators\Validator;
 
 /**
+ * Класс кодирования
+ *
  * Class Base64formEncode
+ *
  * @package linnoxlewis\base64Image\methods
  */
 Class Base64pathEncode extends BaseEncode
@@ -22,13 +25,10 @@ Class Base64pathEncode extends BaseEncode
     public function base64Encode($imagePath): string
     {
         if (file_exists($imagePath)) {
-
             $imageParam = $this->parseImage($imagePath);
-
             $validator = new Validator();
             $validator->setExtension($imageParam['extension']);
             $validator->setImageSize($imageParam['size']);
-
             if ($validator->validate()) {
                 $base64 = $this->getEncoding($imageParam['type'], $imageParam['fileTmp']);
                 return $base64;

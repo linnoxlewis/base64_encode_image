@@ -1,7 +1,10 @@
 <?php
 
 namespace linnoxlewis\base64Image\methods;
+
 /**
+ * Базовый класс
+ *
  * Class BaseEncode
  * @package linnoxlewis\base64Image\methods
  */
@@ -14,6 +17,7 @@ Abstract Class BaseEncode
      * @return string
      */
 	public abstract function base64Encode($imagePath): ?string;
+
     /**
      * Парсинг параметров картинки
      *
@@ -22,7 +26,8 @@ Abstract Class BaseEncode
      * @return array
      */
 	protected abstract function parseImage($image): array;
-    /**
+
+	/**
      * Получение строки base64
      *
      * @param string|null $type    временный путь картинки

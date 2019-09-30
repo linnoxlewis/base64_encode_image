@@ -6,13 +6,16 @@ use linnoxlewis\exception\ImageValidateException;
 use linnoxlewis\validators\Validator;
 
 /**
+ * Класс кодирования картинки
+ *
  * Class Base64formEncode
+ *
  * @package linnoxlewis\base64Image\methods
  */
 Class Base64formEncode extends BaseEncode
 {
     /**
-     * Метод кодирование картинки.
+     * Метод кодирования картинки.
      *
      * @param string|array $image объект картинки.
      *
@@ -23,7 +26,6 @@ Class Base64formEncode extends BaseEncode
     {
         if (isset($image)) {
             $imageParam = $this->parseImage($image['image']);
-
             $validator = new Validator();
             $validator->setExtension($imageParam['extension']);
             $validator->setImageSize($imageParam['size']);
